@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/dart_language/language_module.dart';
 
 void main() {
+  checkVariables();
   runApp(const MyApp());
 }
 

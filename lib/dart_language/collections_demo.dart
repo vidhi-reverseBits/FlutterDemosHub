@@ -5,6 +5,11 @@ void checkCollections() {
   print("--- Collections ---");
 
   /// List - arrays are List in dart
+
+  List<String> myListOfNames;
+  myListOfNames = ["Bob", "John"];
+  print(myListOfNames);
+
   var list = [1, 2, 3, 4, 5];
   print(list);
   print("Length = ${list.length}");
@@ -44,8 +49,15 @@ void checkCollections() {
   print(list2);
 
 
-
   /// Set - unordered collection of unique items
-  
+  // set declaration
+  var names = <String>{};
+  // map declaration
+  var name2 = {};
 
+  names = {"one", "two", "three", "four", "five"};
+  // name2 = {"one", "two"}; // This will not
+  print("Set: $names");
+  print(names.add("Six"));
+  print("Set length: ${names.length}");
 }

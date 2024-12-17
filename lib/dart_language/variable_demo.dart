@@ -45,7 +45,6 @@ void checkVariables() {
   print("const value: $PI");
 
 
-
   // Difference between final and const
   // https://www.educative.io/answers/what-is-the-difference-between-const-and-final-keyword-in-dart
   final int finalValue = DateTime.now().year;

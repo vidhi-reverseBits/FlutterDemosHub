@@ -1,4 +1,5 @@
 
+import 'package:flutter_demo/dart_language/datatype_demo.dart';
 import 'package:flutter_demo/dart_language/variable_demo.dart';
 
 import 'custom_library_demo.dart';
@@ -10,4 +11,5 @@ void allDartDemos() {
   checkOperators();
   doSomething();
   print("Custom library: ${add(5, 7)}");
+  checkAllDatatypes();
 }

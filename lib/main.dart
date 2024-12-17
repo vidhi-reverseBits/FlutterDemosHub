@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/dart_language/metadata_demo.dart';
 import 'package:flutter_demo/dart_language/operator_demo.dart';
 import 'package:flutter_demo/dart_language/variable_demo.dart';
 
 void main() {
   checkVariables();
   checkOperators();
+  doSomething();
   runApp(const MyApp());
 }
 

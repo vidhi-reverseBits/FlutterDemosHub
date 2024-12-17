@@ -1,4 +1,5 @@
 
+import 'package:flutter_demo/dart_language/collections_demo.dart';
 import 'package:flutter_demo/dart_language/datatype_demo.dart';
 import 'package:flutter_demo/dart_language/variable_demo.dart';
 
@@ -12,4 +13,5 @@ void allDartDemos() {
   doSomething();
   print("Custom library: ${add(5, 7)}");
   checkAllDatatypes();
+  checkCollections();
 }

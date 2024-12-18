@@ -99,5 +99,14 @@ void checkOperators() {
   List<int>? list4 = [...list, ...?list3, ...list2];
   print(list4);
 
+
+  // collection-if and collection-for operator
+  var userRole = "admin";
+  var menuItems = ["Dashboard", if(userRole == "admin") "Admin", "Profile"];
+  print("Collection-if: $menuItems");
+
+  var numbers = [1, 2, 3, 4, 5];
+  var square = [6, for(var i in numbers) i * i, 7];
+  print("Collection-for: $square");
 }
 

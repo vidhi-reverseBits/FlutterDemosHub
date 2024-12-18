@@ -2,6 +2,7 @@
 import 'package:flutter_demo/dart_language/collections_demo.dart';
 import 'package:flutter_demo/dart_language/datatype_demo.dart';
 import 'package:flutter_demo/dart_language/functions_demo.dart';
+import 'package:flutter_demo/dart_language/loops_demo.dart';
 import 'package:flutter_demo/dart_language/typedef_demo.dart';
 import 'package:flutter_demo/dart_language/variable_demo.dart';
 
@@ -19,4 +20,6 @@ void allDartDemos() {
   checkCollections();
   checkTypeDef();
   checkFunctions();
+  checkFunctions();
+  checkLoops();
 }

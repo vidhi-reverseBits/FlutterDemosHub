@@ -4,15 +4,22 @@ void checkLoops() {
 
   print("--- Loops ---");
 
-  /// For loop
+  /// For loop with continue statement
   print("For loop");
   for(var i = 1; i <= 5; i++) {
+    if(i == 3) {
+      continue;
+    }
     print("Iteration: $i");
   }
 
+  /// For in loop with break statement
   print("For loop using in");
   var colors = ["Red", "Green", "Blue", "Purple", "White"];
   for(var color in colors) {
+    if (color == "Blue") {
+      break;
+    }
     print("Color is $color");
   }
 

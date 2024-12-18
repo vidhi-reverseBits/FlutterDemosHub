@@ -1,4 +1,5 @@
 
+import 'package:flutter_demo/dart_language/branches_demo.dart';
 import 'package:flutter_demo/dart_language/collections_demo.dart';
 import 'package:flutter_demo/dart_language/datatype_demo.dart';
 import 'package:flutter_demo/dart_language/functions_demo.dart';
@@ -22,4 +23,5 @@ void allDartDemos() {
   checkFunctions();
   checkFunctions();
   checkLoops();
+  checkBranches();
 }

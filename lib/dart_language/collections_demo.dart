@@ -1,5 +1,7 @@
 
 // https://medium.com/flutter-community/useful-list-methods-in-dart-6e173cac803d
+import 'dart:collection';
+
 void checkCollections() {
 
   print("--- Collections ---");
@@ -56,8 +58,66 @@ void checkCollections() {
   var name2 = {};
 
   names = {"one", "two", "three", "four", "five"};
-  // name2 = {"one", "two"}; // This will not
+  // name2 = {"one", "two"}; // This will not work as we are assigning set values into map
   print("Set: $names");
   print(names.add("Six"));
   print("Set length: ${names.length}");
+
+  // SplayTreeSet
+  var alphabets = SplayTreeSet<int>();
+  alphabets.addAll([6, 3, 4, 2, 9, 1, 5]);
+  print("SplayTreeSet: $alphabets");
+
+
+  /// Map - a map is an object that associates keys and values.
+  var numbers = <int, String>{};
+  numbers = {1: "one", 2: "two", 3: "three", 4: "four"};
+  print("Map: $numbers");
+  numbers[5] = "five";
+  print("Map: $numbers");
+  print("2nd value: ${numbers[2]}");
+  print("Map length: ${numbers.length}");
+  print("Empty check: ${numbers.isEmpty}");
+  print("Keys: ${numbers.keys}");
+  print("Values: ${numbers.values}");
+  print("containsKey: ${numbers.containsKey(2)}");
+  print("containsValue: ${numbers.containsValue("three")}");
+
+  // create a copy of map
+  var map2 = Map.of(numbers);
+  map2[6] = "six";
+  print("Copy Map: ${map2}");
+
+  var letters = ['a', 'b', 'c'];
+  var numbs = [1, 2, 3];
+  var map = Map.fromIterables(numbs, letters);
+  print("Map from list: $map");
+
+  // update value
+  map.update(2, (v) {
+    print("Old value before update: $v");
+    return "v";
+  });
+  print("Updated Map: $map");
+  
+  map.update(4, (v) => "d", ifAbsent: () => "addedD");
+  print("Updated map: $map");
+
+  // Iterating map
+  map.forEach((key, value) {
+    print("Key: $key and Value: $value");
+  });
+
+  // remove value
+  map.remove(2);
+  print("Map after removing 2nd key: $map");
+  map.removeWhere((k, v) => v.startsWith("a"));
+  print("Map after removing v: $map");
+  map.clear();
+  print("Map after clear: $map");
+
+  // SplayTreeMap
+  var splayMap = SplayTreeMap<int, String>();
+  splayMap.addAll({5: "five", 1: "one", 2: "two"});
+  print("SplayTreeMap: $splayMap");
 }

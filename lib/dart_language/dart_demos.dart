@@ -1,5 +1,5 @@
-
 import 'package:flutter_demo/dart_language/branches_demo.dart';
+import 'package:flutter_demo/dart_language/classes_demo.dart';
 import 'package:flutter_demo/dart_language/collections_demo.dart';
 import 'package:flutter_demo/dart_language/datatype_demo.dart';
 import 'package:flutter_demo/dart_language/exception_demo.dart';
@@ -26,4 +26,6 @@ void allDartDemos() {
   checkLoops();
   checkBranches();
   checkExceptionHandling();
+
+  checkClasses();
 }

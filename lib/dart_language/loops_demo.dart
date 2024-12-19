@@ -1,13 +1,11 @@
-
 // https://dart.dev/language/loops
 void checkLoops() {
-
   print("--- Loops ---");
 
   /// For loop with continue statement
   print("For loop");
-  for(var i = 1; i <= 5; i++) {
-    if(i == 3) {
+  for (var i = 1; i <= 5; i++) {
+    if (i == 3) {
       continue;
     }
     print("Iteration: $i");
@@ -16,7 +14,7 @@ void checkLoops() {
   /// For in loop with break statement
   print("For loop using in");
   var colors = ["Red", "Green", "Blue", "Purple", "White"];
-  for(var color in colors) {
+  for (var color in colors) {
     if (color == "Blue") {
       break;
     }
@@ -32,7 +30,7 @@ void checkLoops() {
   /// While loop
   print("While loop");
   var count = 1;
-  while(count<5) {
+  while (count < 5) {
     print("Iteration: $count");
     count++;
   }
@@ -43,5 +41,5 @@ void checkLoops() {
   do {
     print("Iteration: $value");
     value++;
-  } while(value <= 5);
+  } while (value <= 5);
 }

@@ -1,4 +1,3 @@
-
 // https://dart.dev/language/branches
 void checkBranches() {
   print("--- Branch Statements ---");
@@ -13,7 +12,7 @@ void checkBranches() {
 
   /// if-case statement
   var element = 7;
-  if(element case 0) {
+  if (element case 0) {
     print("$element is 0");
   } else if (element case int n when n.isEven) {
     print("$element is even");
@@ -30,7 +29,7 @@ void checkBranches() {
     case < 0:
       print("Negative");
       break;
-    case >0:
+    case > 0:
       print("Positive");
       break;
   }

@@ -1,14 +1,12 @@
-
 // https://dart.dev/language/functions
 void checkFunctions() {
-
   print("--- Functions ---");
 
   // Parameterized function
   print("Sum: ${sum(10, 20)}");
 
   // Shorthand
-  int minus(int a, int b) => a-b;
+  int minus(int a, int b) => a - b;
   print("Subtract: ${minus(10, 5)}");
 
   // Provide default value and use of required
@@ -26,26 +24,27 @@ void checkFunctions() {
   print(myAge(23));
 
   // Use of Function and how to assign function to a variable
-  void Function(String, {String greeting}) g = meetAndGreet; // Here we are assigning function meetAndGreet to variable g And now g act as a reference to the greet function
-  g("Vidhi", greeting:  "Howdy");
+  void Function(String, {String greeting}) g =
+      meetAndGreet; // Here we are assigning function meetAndGreet to variable g And now g act as a reference to the greet function
+  g("Vidhi", greeting: "Howdy");
 
   // Anonymous Function or lambdas, closures
   var fruits = ["apples", "bananas", "oranges"];
   var uppercasedFruites = fruits.map((item) {
     return item.toUpperCase();
   }).toList();
-  
+
   uppercasedFruites.forEach((item) {
     print("$item: ${item.length}");
   });
 }
 
 int sum(int a, int b) {
-  return a+b;
+  return a + b;
 }
 
 int multiply({required int a, int b = 10}) {
-  return a*b;
+  return a * b;
 }
 
 String greet({String? name}) {

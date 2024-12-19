@@ -1,4 +1,3 @@
-
 // https://dart.dev/language/typedefs
 
 /// typedef for a variable or a collection

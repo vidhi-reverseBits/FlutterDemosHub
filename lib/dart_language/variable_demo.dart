@@ -1,7 +1,5 @@
-
 // https://dart.dev/language/variables
 void checkVariables() {
-
   print("--- Variables ---");
 
   // Variable declaration and initialization
@@ -28,10 +26,10 @@ void checkVariables() {
   print(city);
 
   // Late Variable
-  late String state; // If you fail to initialize a late variable, a runtime error occurs when the variable is used.
+  late String
+      state; // If you fail to initialize a late variable, a runtime error occurs when the variable is used.
   state = "Gujarat";
   print(state);
-
 
   // Final and Const Variable
   final subject = "Flutter";
@@ -44,7 +42,6 @@ void checkVariables() {
   // PI = 40; // We can't the change the value of const keyword
   print("const value: $PI");
 
-
   // Difference between final and const
   // https://www.educative.io/answers/what-is-the-difference-between-const-and-final-keyword-in-dart
   final int finalValue = DateTime.now().year;
@@ -52,12 +49,12 @@ void checkVariables() {
 
   // year is not a compile-time constant. It's evaluated at runtime, which violates the requirement for const variables.
   // const int constValue = DateTime.now().year; //  will cause a compile-time error
-
 }
 
 // Instance variables can be final but not const.
 class Circle {
   final area = 30;
+
   // const length = 50;
   static const width = 40;
 }

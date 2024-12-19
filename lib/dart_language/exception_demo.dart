@@ -1,7 +1,5 @@
-
 // https://dart.dev/language/error-handling
 void checkExceptionHandling() {
-
   print("--- Exception Handling ---");
 
   try {
@@ -11,7 +9,7 @@ void checkExceptionHandling() {
   }
 
   /// Assert - message will print when assert failed
-  var number = 10;
+  var number = 15;
   assert(number > 12, "This is the assert message");
 }
 

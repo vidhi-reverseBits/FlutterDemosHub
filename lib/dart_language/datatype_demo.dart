@@ -1,15 +1,14 @@
-
 import 'package:flutter/cupertino.dart';
 
 void checkAllDatatypes() {
-
   print("--- DataTypes ---");
 
   // Number
   int age = 20;
   double value = 20.67;
 
-  num x = 5; // If you use num, then variable can have both integer and double values.
+  num x =
+      5; // If you use num, then variable can have both integer and double values.
   x = 15.34;
 
   // String => int
@@ -27,7 +26,6 @@ void checkAllDatatypes() {
   // double => String
   String onePointOneString = 1.1.toString();
   print(onePointOneString);
-
 
   // String - You can use single or double quote to represent string
   var statement = "I am learning dart.";
@@ -48,7 +46,6 @@ void checkAllDatatypes() {
   ''';
   print(s2);
 
-
   // bool - Boolean
   bool isCheck = true;
   if (isCheck == true) {
@@ -56,7 +53,7 @@ void checkAllDatatypes() {
   }
 
   var fullName = '';
-  if(fullName.isEmpty) {
+  if (fullName.isEmpty) {
     print("Name is empty.");
   }
 
@@ -71,7 +68,6 @@ void checkAllDatatypes() {
 }
 
 void checkRecords() {
-
   var records = ('first', a: 2, b: true, 'last');
   print(records.$1);
   print(records.a);

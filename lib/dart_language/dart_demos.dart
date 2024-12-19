@@ -2,6 +2,7 @@
 import 'package:flutter_demo/dart_language/branches_demo.dart';
 import 'package:flutter_demo/dart_language/collections_demo.dart';
 import 'package:flutter_demo/dart_language/datatype_demo.dart';
+import 'package:flutter_demo/dart_language/exception_demo.dart';
 import 'package:flutter_demo/dart_language/functions_demo.dart';
 import 'package:flutter_demo/dart_language/loops_demo.dart';
 import 'package:flutter_demo/dart_language/typedef_demo.dart';
@@ -24,4 +25,5 @@ void allDartDemos() {
   checkFunctions();
   checkLoops();
   checkBranches();
+  checkExceptionHandling();
 }

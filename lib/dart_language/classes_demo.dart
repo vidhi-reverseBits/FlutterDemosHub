@@ -24,6 +24,11 @@ void checkClasses() {
   /// Static variable and method
   print("Static count variable: ${Counter.count}");
   Counter.increment();
+
+
+  /// Callable object
+  var emp = Employee();
+  print(emp("Vidhi", "Mobile developer"));
 }
 
 class Person {
@@ -54,6 +59,7 @@ class Student implements Person {
 
 String greet(Person person) => person.introduce();
 
+// Static
 class Counter {
   static int count = 0;
 
@@ -61,4 +67,11 @@ class Counter {
     count++;
     print("Count after incrementing: ${Counter.count}");
   }
+}
+
+// Callable object
+class Employee {
+
+  // callable object
+  String call(String empName, String empDesg) => "Hello! Employee name is $empName and designation is $empDesg";
 }

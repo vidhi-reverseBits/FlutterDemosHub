@@ -4,6 +4,7 @@ import 'package:flutter_demo/dart_language/classes_demo.dart';
 import 'package:flutter_demo/dart_language/collections_demo.dart';
 import 'package:flutter_demo/dart_language/constructor_demo.dart';
 import 'package:flutter_demo/dart_language/datatype_demo.dart';
+import 'package:flutter_demo/dart_language/enum_demo.dart';
 import 'package:flutter_demo/dart_language/exception_demo.dart';
 import 'package:flutter_demo/dart_language/functions_demo.dart';
 import 'package:flutter_demo/dart_language/loops_demo.dart';
@@ -32,4 +33,5 @@ void allDartDemos() {
   checkClasses();
   checkConstructors();
   checkAbstractClass();
+  checkEnums();
 }

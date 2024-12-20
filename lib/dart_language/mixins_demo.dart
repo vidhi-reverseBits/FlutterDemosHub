@@ -78,13 +78,13 @@ void checkMixins() {
   obj1.display2();
   obj1.display();
   obj1.introduce();
-}
 
-/// class can extend only one class
-/// To extend more than one class we can use mixins
-/// classes can behave as an interface
-/// We can implements as many classes as we want
-/// Mixins can have properties and methods but don't have constructors
+  // We can't create an instance of an mixin
+  // var obj2 = First;
+
+  var obj3 = Animal();
+  obj3.distribute();
+}
 
 mixin One {}
 
@@ -93,3 +93,28 @@ mixin Two {}
 mixin Three on One, Two {}
 
 class D with One, Two, Three {}
+
+/// Mixin class
+mixin class Animal {
+  void distribute() {
+    print("Mixin classs Demo");
+  }
+}
+
+// We can extend a mixin class
+class Birds extends Animal {
+
+}
+
+// We can also mixing mixin class
+class Insects with Animal {
+
+}
+
+/// class can extend only one class
+/// To extend more than one class we can use mixins
+/// classes can also behave as an interface
+/// We can implements as many classes as we want
+/// Mixins can have properties and methods but don't have constructors
+/// Mixins can't instantiated just like abstract and interface
+/// mixin class can extend, mixing (with) and also can create instance

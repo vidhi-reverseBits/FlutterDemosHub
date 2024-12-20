@@ -1,5 +1,6 @@
 import 'package:flutter_demo/dart_language/abstract_class_demo.dart';
 import 'package:flutter_demo/dart_language/branches_demo.dart';
+import 'package:flutter_demo/dart_language/class_modifiers_demo.dart';
 import 'package:flutter_demo/dart_language/classes_demo.dart';
 import 'package:flutter_demo/dart_language/collections_demo.dart';
 import 'package:flutter_demo/dart_language/constructor_demo.dart';
@@ -39,4 +40,5 @@ void allDartDemos() {
   checkExtensionMethod();
 
   checkMixins();
+  checkModifiers();
 }

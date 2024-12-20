@@ -10,7 +10,7 @@ void checkFunctions() {
   print("Subtract: ${minus(10, 5)}");
 
   // Provide default value and use of required
-  print("Multiply: ${multiply(a: 10)}");
+  print("Multiply: ${multiply()}");
 
   // Optional parameter
   print("Greetings: ${greet()}");
@@ -43,8 +43,8 @@ int sum(int a, int b) {
   return a + b;
 }
 
-int multiply({required int a, int b = 10}) {
-  return a * b;
+int multiply({int? a, int b = 10}) {
+  return a ?? 1 * b;
 }
 
 String greet({String? name}) {

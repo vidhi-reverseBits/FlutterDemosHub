@@ -1,12 +1,13 @@
 // https://medium.com/flutter-community/useful-list-methods-in-dart-6e173cac803d
 import 'dart:collection';
 
+import 'package:flutter_demo/dart_language/classes_demo.dart';
+
 void checkCollections() {
 
   print("--- Collections ---");
 
   /// List - arrays are List in dart
-
   List<String> myListOfNames;
   myListOfNames = ["Bob", "John"];
   print(myListOfNames);
@@ -92,6 +93,9 @@ void checkCollections() {
   var map = Map.fromIterables(numbs, letters);
   print("Map from list: $map");
 
+  // tear-offs
+  numbs.forEach(print);
+
   // update value
   map.update(2, (v) {
     print("Old value before update: $v");
@@ -115,7 +119,7 @@ void checkCollections() {
   map.clear();
   print("Map after clear: $map");
 
-  // SplayTreeMap
+  // SplayTreeMap - Sort on key
   var splayMap = SplayTreeMap<int, String>();
   splayMap.addAll({5: "five", 1: "one", 2: "two"});
   print("SplayTreeMap: $splayMap");

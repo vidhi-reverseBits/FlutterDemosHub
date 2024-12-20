@@ -9,6 +9,7 @@ import 'package:flutter_demo/dart_language/exception_demo.dart';
 import 'package:flutter_demo/dart_language/extension_method_demo.dart';
 import 'package:flutter_demo/dart_language/functions_demo.dart';
 import 'package:flutter_demo/dart_language/loops_demo.dart';
+import 'package:flutter_demo/dart_language/mixins_demo.dart';
 import 'package:flutter_demo/dart_language/typedef_demo.dart';
 import 'package:flutter_demo/dart_language/variable_demo.dart';
 
@@ -36,4 +37,6 @@ void allDartDemos() {
   checkAbstractClass();
   checkEnums();
   checkExtensionMethod();
+
+  checkMixins();
 }

@@ -65,5 +65,3 @@ class EmpDet2 implements Employee {
     print("EmpDet2");
   }
 }
-
-

@@ -1,13 +1,9 @@
-/// Its working as an interface
 class A {
-  void display() {}
+
 }
 
-class B implements A {
-  @override
-  void display() {
-    print("Must need to implement the method and properties of class A");
-  }
+class B  {
+
 }
 
 /// This is not possible in dart as it does not support multiple inheritance
@@ -72,20 +68,6 @@ class FinalClass with First, Second {
   }
 }
 
-void checkMixins() {
-  var obj1 = FinalClass();
-  obj1.display3();
-  obj1.display2();
-  obj1.display();
-  obj1.introduce();
-
-  // We can't create an instance of an mixin
-  // var obj2 = First;
-
-  var obj3 = Animal();
-  obj3.distribute();
-}
-
 mixin One {}
 
 mixin Two {}
@@ -111,9 +93,50 @@ class Insects with Animal {
 
 }
 
+// Mixin class
+mixin class AB {
+  void display() {
+    print("This is mixin class AB method");
+  }
+}
+
+mixin class BC {
+  void display() {
+    print("This is mixin class BC method");
+  }
+}
+
+class AD with AB, BC {
+    void show() {
+      AB().display();
+    }
+}
+
+void checkMixins() {
+  var obj1 = FinalClass();
+  obj1.display3();
+  obj1.display2();
+  obj1.display();
+  obj1.introduce();
+
+  // We can't create an instance of an mixin
+  // var obj2 = First;
+
+  var obj3 = Animal();
+  obj3.distribute();
+
+  var obj4 = AD();
+  obj4.show();
+
+  var obj5 = AB();
+  obj5.display();
+
+  var obj6 = BC();
+  obj6.display();
+}
+
 /// class can extend only one class
 /// To extend more than one class we can use mixins
-/// classes can also behave as an interface
 /// We can implements as many classes as we want
 /// Mixins can have properties and methods but don't have constructors
 /// Mixins can't instantiated just like abstract and interface
